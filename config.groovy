@@ -3,6 +3,7 @@ import jenkins.model.*;
 
 dis = new hudson.model.JDK.DescriptorImpl();
 dis.setInstallations( new hudson.model.JDK("OpenJDK-8", "/usr/lib/jvm/java-8-openjdk-amd64"));
+dis.setInstallations( new hudson.model.JDK("OpenJDK-11", "/usr/lib/jvm/jdk-11"));
 
 
 a=Jenkins.instance.getExtensionList(hudson.tasks.Maven.DescriptorImpl.class)[0];
